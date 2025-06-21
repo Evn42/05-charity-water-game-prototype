@@ -8,6 +8,25 @@
 </head>
 <body>
     <h1>Welcome to the Charity Water Game Prototype</h1>
+    <h1>Charity: Water - BucketHead</h1>
+    <div id="game-container">
+        <div id="game-header">
+            <span id="lives">Lives: 3</span>
+            <span id="instructions">Press space to jump!</span>
+            <span id="score">Score: 0</span>
+        </div>
+        <div id="game-area">
+            <div id="buckethead">
+                <div class="bucket-face"></div>
+                <div class="bucket-body"></div>
+            </div>
+            <!-- Obstacles will be added by JavaScript -->
+            <div id="ground"></div>
+        </div>
+    </div>
+    <div id="game-info">
+        <p>BucketHead must jump past obstacles coming from the right in order to deliver water to their community.</p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
