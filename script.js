@@ -80,6 +80,12 @@ window.addEventListener('keydown', (e) => {
     }
 });
 
+// Listen for tap/touch on the game area to jump (for mobile)
+gameArea.addEventListener('touchstart', function(e) {
+    e.preventDefault(); // Prevent scrolling
+    jump();
+});
+
 // Create obstacles (spikes or holes)
 function createObstacle() {
     if (gameOver) return;
@@ -198,4 +204,3 @@ gameLoop();
 startObstacles();
 
 // --- End of game code ---
-// All code is commented for beginners. Try changing values to see what happens!
